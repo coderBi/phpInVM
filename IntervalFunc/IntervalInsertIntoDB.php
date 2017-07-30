@@ -30,7 +30,7 @@ $company = 'company1'; //应聘公司名
 $person_name = 'bww'; //应聘这名字
 $dbname = $company.'_'.$person_name;
 //检测数据库是否存在
-$sql = "select * information_schema where schma_name='$dbname'";
+$sql = "select * from information_schema where schma_name='$dbname'";
 $result = $mysqli->query();
 while(!empty($result)){
 	$dbname .= rand();
